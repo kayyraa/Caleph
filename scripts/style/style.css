@@ -1,0 +1,90 @@
+.SearchInput {
+    width: 24vw;
+    font-size: 1em;
+}
+
+.DropdownList {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1em;
+
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: 27vw;
+    height: fit-content;
+    max-height: 8em;
+}
+
+.DropdownList > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+
+    color: rgb(0, 0, 0);
+    min-height: 2.5em;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    cursor: pointer;
+}
+
+.DropdownList > div:not(:last-child) {
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.DropdownList > div:nth-child(odd) {
+    background-color: rgb(200, 200, 200);
+}
+
+.DropdownList > div:nth-child(odd):hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.DropdownList > div:nth-child(even):hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.ArticleWizard > column {
+    width: 50%;
+    gap: 1em;
+
+    background-color: rgba(255, 255, 255, 0.125);
+
+    padding: 1em;
+
+    border-radius: 8px;
+}
+
+.ArticleWizard > column div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ArticleWizard > column div > * {
+    border-radius: 0;
+}
+
+.ArticleWizard > column div > *:first-child {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.ArticleWizard > column div > *:last-child {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.ArticleWizard textarea {
+    resize: none;
+    border-radius: 8px;
+    padding-top: 1em;
+}
